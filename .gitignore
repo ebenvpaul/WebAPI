@@ -1,0 +1,87 @@
+# Visual Studio Code
+.vscode/
+
+# Visual Studio
+.vs/
+*.sln
+*.suo
+*.csproj.user
+*.vcxproj.user
+*.cache
+*.swp
+
+# Build output
+/bin/
+/obj/
+/Debug/
+/Release/
+/logs/
+/nupkg/
+
+# NuGet
+*.nuget.props
+*.nuget.targets
+**/packages/
+*.lock.json
+
+# Build artifacts
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+*.log.xml
+*.log.json
+*.log.html
+*.log.md
+*.log.txt
+TestResults/
+
+# Publish output
+/publish/
+
+# MSTest test Results
+TestResults/
+
+# GhostDoc plugin settings
+*.GhostDoc.xml
+
+# Resharper specific
+_ReSharper*/
+*.resharper.user
+*.ReSharper*
+*.DotSettings.user
+
+# Rider
+.idea/
+*.sln.iml
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Roslyn
+*.ide
+
+# Build results of an ATL project
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+[Dd]ebug*/
+
+
+# .NET Core
+## Build cache directory
+*.dotnet/
+
+## .NET Core local directory
+.local/
+
+# Ignore DB folder
+/DB/
+
+# Ignore .db files
+*.db

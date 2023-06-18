@@ -17,11 +17,11 @@ FROM mcr.microsoft.com/dotnet/sdk:7.0  AS build
 # Set the working directory for subsequent COPY and RUN commands
 WORKDIR /src
 # Copy the project file to the container filesystem /src folder
-COPY ["WEBAPI/WebAPI.csproj", "./app/"]
+COPY ["WebAPI/WebAPI.csproj", "./app/"]
 # Build the application80
 RUN dotnet  restore "./app/WebAPI.csproj" --disable-parallel
 # Copy everything to the container filesystem
-COPY ./WEBAPI/ ./app
+COPY ./WebAPI/ ./app
 # Set the working directory for subsequent RUN commands
 WORKDIR "/src/app"
 # Execute project build with all of its dependencies
@@ -37,4 +37,4 @@ COPY --from=publish /app/publish .
 ENV ASPNETCORE_ENVIRONMENT=Production
 
 # Start the application
-ENTRYPOINT ["dotnet", "WebAPI.dll"]
+ENTRYPOINT ["dotnet", "WebAPI.dll", "--workers=4"]

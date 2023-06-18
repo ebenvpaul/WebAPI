@@ -84,3 +84,6 @@ build/
 
 # Ignore .db files
 *.db
+
+# macOS-specific
+*.DS_Store

@@ -11,10 +11,10 @@
 *.swp
 
 # Build output
-/bin/
-/obj/
-/Debug/
-/Release/
+/WebAPI/bin/
+/WebAPI/obj/
+/WebAPI/Debug/
+/WebAPI/Release/
 /logs/
 /nupkg/
 
@@ -25,23 +25,23 @@
 *.lock.json
 
 # Build artifacts
-*.dll
-*.exe
-*.pdb
-*.cache
-*.log
-*.log.xml
-*.log.json
-*.log.html
-*.log.md
-*.log.txt
-TestResults/
+/WebAPI/**/*.dll
+/WebAPI/**/*.exe
+/WebAPI/**/*.pdb
+/WebAPI/**/*.cache
+/WebAPI/**/*.log
+/WebAPI/**/*.log.xml
+/WebAPI/**/*.log.json
+/WebAPI/**/*.log.html
+/WebAPI/**/*.log.md
+/WebAPI/**/*.log.txt
+/TestResults/
 
 # Publish output
-/publish/
+/WebAPI/publish/
 
 # MSTest test Results
-TestResults/
+/TestResults/
 
 # GhostDoc plugin settings
 *.GhostDoc.xml
@@ -71,7 +71,6 @@ _ReSharper*/
 x64/
 build/
 [Dd]ebug*/
-
 
 # .NET Core
 ## Build cache directory

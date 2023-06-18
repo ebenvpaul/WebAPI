@@ -28,4 +28,4 @@ jobs:
           context: .
           file: ./WebAPI/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME}}/WebAPI:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME}}/webapi:latest
